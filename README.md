@@ -30,7 +30,7 @@ A k-NN classifier is trained on the dataset after performing preprocessing, scal
 
 ## Dataset
 
-**Source: Kaggle - Zoo Dataset, Class Dataset (https://www.kaggle.com/datasets/uciml/zoo-animal-classification) 
+Source: Kaggle - Zoo Dataset, Class Dataset (https://www.kaggle.com/datasets/uciml/zoo-animal-classification) 
 
 ## Features:
 
@@ -46,27 +46,23 @@ hair, feathers, eggs, milk, airborne, aquatic, predator, toothed, backbone, brea
 
 ### 2. Exploratory Data Analysis (EDA)
 
-- Count plots for categorical features like hair, feathers, milk, eggs, etc. 
+- Count plots for number of animals per class.
 
-- Histogram and boxplots for numerical feature legs.  
+  <img width="400" height="312" alt="image" src="https://github.com/user-attachments/assets/4b21e7a4-527a-4726-951c-8cb6dc756f31" />
 
-Visualizations: 
+- Histogram and boxplots for numerical feature legs.
 
-Distribution of Legs 
+  <img width="376" height="239" alt="image" src="https://github.com/user-attachments/assets/b660cac9-5a1a-4851-ba31-857ffaa219b9" />
 
-Feature Counts
+  <img width="334" height="239" alt="image" src="https://github.com/user-attachments/assets/8b211792-241b-435f-9e5b-21db1d68b752" />
 
-### 3. Handling Skew & Outliers
+### 3. Check Skew and Correlation 
 
 - Checked skew of legs → skew = 0.139 (approximately symmetric).  
 
 - No significant transformation required for legs due to low skew.
-
-- Visualized outliers using boxplots and removed if necessary.  
-
-Visualizations: 
-
-Legs Boxplot
+  
+- Visualized correlation using heatmap
 
 ### 4. Feature Selection
 
@@ -98,6 +94,8 @@ Legs Boxplot
 
 ### 9. Confusion Matrix:
 
+<img width="425" height="312" alt="image" src="https://github.com/user-attachments/assets/239cb136-e580-4e88-9969-95115c7861c7" />
+
 ## Results:
 
 - Best k = 3 
@@ -105,3 +103,17 @@ Legs Boxplot
 - CV Score = 0.9368  
 
 - Test Accuracy = 1.0
+
+## Technologies & Libraries Used
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib
+
+Seaborn

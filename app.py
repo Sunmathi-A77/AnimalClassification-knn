@@ -2,10 +2,8 @@ import streamlit as st
 import pickle
 import numpy as np
 
-# ================== PAGE CONFIG ==================
 st.set_page_config(page_title="Zoo Classifier", page_icon="🐾", layout="centered")
 
-# ================== CUSTOM CSS ==================
 page_bg = """
 <style>
 /* Gradient background */
@@ -78,20 +76,17 @@ div.stButton > button:hover {
 """
 st.markdown(page_bg, unsafe_allow_html=True)
 
-# ================== LOAD MODEL ==================
 with open("knn_zoo_model.pkl", "rb") as f:
     data = pickle.load(f)
     model = data["model"]
     scaler = data["scaler"]
 
-# ================== APP TITLE ==================
 st.markdown(
     "<h1>🐾 Zoo Animal Classifier</h1>",
     unsafe_allow_html=True
 )
 st.write("Predict the Animal Class based on physical traits.")
 
-# ================== INPUT FEATURES ==================
 col1, col2 = st.columns(2)
 
 with col1:
@@ -114,7 +109,6 @@ with col2:
     domestic = st.selectbox("Domestic", [0, 1])
     catsize = st.selectbox("Catsize", [0, 1])
 
-# ================== PREDICTION ==================
 if st.button("Predict Animal Class"):
     features = np.array([[hair, feathers, eggs, milk, airborne, aquatic, predator,
                           toothed, backbone, breathes, venomous, fins, legs,
@@ -135,5 +129,4 @@ if st.button("Predict Animal Class"):
 
     st.success(f"Predicted Animal Class: {class_names.get(prediction, 'Unknown')}")
 
-# ================== CREATED BY ==================
 st.markdown("<div class='footer'>Created by Sunmathi</div>", unsafe_allow_html=True)

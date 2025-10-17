@@ -40,6 +40,28 @@ Source: Kaggle - Zoo Dataset, Class Dataset (https://www.kaggle.com/datasets/uci
 
 hair, feathers, eggs, milk, airborne, aquatic, predator, toothed, backbone, breathes, venomous, fins, legs, tail, domestic, catsize, class_type  
 
+## ⚙ Installation
+
+### Clone the repository:
+
+git clone cd
+
+### Create and activate a virtual environment (optional but recommended):
+
+python -m venv myvenv
+
+source myvenv/bin/activate      # Linux/Mac
+
+myvenv\Scripts\activate         # Windows
+
+### Install required libraries:
+
+pip install -r requirements.txt
+
+### Run the app:
+
+streamlit run app.py
+
 ## Steps Performed
 
 ### 1. Data Loading & Exploration

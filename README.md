@@ -1,5 +1,10 @@
 # 🐾 Zoo Animal Classification Project
 
+## Project Overview
+
+This project predicts the animal class based on physical traits such as hair, feathers, eggs, milk, legs, and other features.  
+A k-NN classifier is trained on the dataset after performing preprocessing, scaling, and handling skewed numerical features (like legs). 
+
 ## 🐾 Zoo Animal Classifier App
 
 Try the live app here: [Zoo Animal Classifier](https://animalclassification-kkn.streamlit.app/)
@@ -25,12 +30,7 @@ A simple web app built with Streamlit that classifies animals into their respect
    - 🐟 Fish  
    - 🐸 Amphibian  
    - 🦐 Bug  
-   - 🦂 Invertebrate  
-
-## Project Overview
-
-This project predicts the animal class based on physical traits such as hair, feathers, eggs, milk, legs, and other features.  
-A k-NN classifier is trained on the dataset after performing preprocessing, scaling, and handling skewed numerical features (like legs).  
+   - 🦂 Invertebrate   
 
 ## Dataset
 

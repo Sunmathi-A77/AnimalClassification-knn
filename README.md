@@ -6,9 +6,9 @@ Try the live app here: [Zoo Animal Classifier](https://animalclassification-kkn.
 
 A simple web app built with Streamlit that classifies animals into their respective classes based on physical traits using a k-Nearest Neighbors (k-NN) model.
 
-![Iris Flower Classifier Screenshot](https://github.com/user-attachments/assets/5fd0ec67-e432-4918-869e-013eed468b93){ width=300px }
+<img src="(https://github.com/user-attachments/assets/952c672b-d4a5-4e86-91d7-aba9e9c36e71)" width="300" alt="Iris Flower Classifier Screenshot">
 
-![Iris Flower Classifier Screenshot](https://github.com/user-attachments/assets/bae2404d-a0ea-45a8-a276-2a9df7e67e8f){ width=300px }
+<img src="(https://github.com/user-attachments/assets/2c01b78a-166f-4852-9384-766f5afa0f8c)" width="300" alt="Iris Flower Classifier Screenshot">
 
 ## Usage
 
